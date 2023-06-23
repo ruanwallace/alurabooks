@@ -1,0 +1,147 @@
+.carrossel {
+    background-color: var(--cinza);
+    overflow: auto;
+}
+
+.carrossel__titulo {
+    color: var(--laranja);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: var(--cor-de-fundo);
+    padding: 1.5em 0 0.8em 0;
+    text-align: center;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0 1em 0;
+}
+
+.swiper-slide {
+    width: 60%;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.card {
+    background-color: var(--cor-de-fundo);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 14px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card__container {
+    display: flex;
+    margin-bottom: 2em;
+    justify-content: space-between;
+}
+
+.card__descricao {
+    margin-right: 1em;
+}
+
+.card__estrelas {
+    margin-bottom: 0.7em;
+}
+
+.card__subtitulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.card__titulo {
+    color: var(--azul);
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0.7em 0;
+}
+
+.card__texto {
+    color: var(--preto);
+    font-size: 14px;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__botao {
+    margin: 0.5em;
+}
+
+.card__saiba {
+    background-color: var(--laranja);
+    color: var(--cor-de-fundo);
+    font-weight: 700;
+    padding: 1em 2.2em;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        padding: 2.3em 0 0.8em 0;
+        font-size: 26px;
+    }
+
+    .swiper {
+        width: 70%;
+    }
+
+    .swiper-pagination {
+        margin: 1.5em 0 3em 0;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+
+    .card {
+        width: 55%;
+        margin: 3em auto;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .carrossel__titulo {
+        font-size: 32px;
+    }
+
+    .carrossel__container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4em;
+    }
+
+    .swiper {
+        width: 40%;
+    }
+
+    .swiper-pagination {
+        margin: 3em 0 2em 0;
+    }
+
+    .card {
+        width: 35%;
+        padding: 2em 1.5em;
+        margin: 3em auto 0 0;
+    }
+
+    .card__subtitulo {
+        font-size: 32px;
+    }
+
+    .card__texto {
+        font-size: 16px;
+    }
+}
